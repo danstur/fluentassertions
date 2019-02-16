@@ -101,6 +101,12 @@ namespace FluentAssertions.Primitives
             return new AndConstraint<StringAssertions>(this);
         }
 
+        public AndConstraint<StringAssertions> NotBeEquivalentTo(string unexpected, string because = "",
+            params object[] becauseArgs)
+        {
+            return new AndConstraint<StringAssertions>(this);
+        }
+
         /// <summary>
         /// Asserts that a string is not exactly the same as the specified <paramref name="unexpected"/>,
         /// including the casing and any leading or trailing whitespace.
